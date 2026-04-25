@@ -151,6 +151,7 @@ docker compose up -d --build
 โปรเจกต์นี้เป็นส่วนหนึ่งของวิชา:
 - **ICT22467** — ระบบฐานข้อมูล (DataBase)
 - **CPE23567** — ระบบปฏิบัติการ (Operating System)
+>ทั้งนี้โปรเจ็คนี้ถูกต่อยอดมาจากProject smart watering system
 
 **มหาวิทยาลัยศรีปทุม (Sripatum University)**
 
