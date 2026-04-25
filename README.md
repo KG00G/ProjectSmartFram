@@ -52,10 +52,15 @@ JWT_SECRET=ใส่รหัสลับของคุณที่นี่
 Bash
 docker compose up -d --build
 
-### ขั้นตอนที่ 4 - การเข้าใช้งาน
+### ▶️ ขั้นตอนที่ 4 - การเข้าใช้งาน
+
 เมื่อระบบทำงานสมบูรณ์แล้ว สามารถเข้าถึงบริการต่างๆ ได้ตามช่องทางนี้:
-Web Dashboard (หน้าเว็บหลัก): เปิดไฟล์ index.html หรือเข้าผ่าน http://localhost:3000
-ระบบจัดการฐานข้อมูล (phpMyAdmin): เข้าผ่าน http://localhost:8080
+
+- **Web Dashboard (หน้าเว็บหลัก):** เปิดไฟล์ `index.html` หรือเข้าผ่าน [http://localhost:3000](http://localhost:3000)
+- **ระบบจัดการฐานข้อมูล (phpMyAdmin):** เข้าผ่าน [http://localhost:8080](http://localhost:8080)
+
+---
+
 ## 👤 Account สำหรับ Login
 
 | Username | Password | Role | สิทธิ์การใช้งาน |
