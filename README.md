@@ -1,13 +1,12 @@
 # 🌱 ProjectSmartFram (ระบบจัดการฟาร์มอัจฉริยะ)
 
-> This is our project for study.
+> *This is our project for study.*
 > ระบบจัดการและมอนิเตอร์ฟาร์มอัจฉริยะ (Smart Farm) แบบครบวงจร 
-> รองรับการดูข้อมูลเซ็นเซอร์แบบ Real-time, ระบบสั่งการปั๊มน้ำอัตโนมัติ, และการจัดการข้อมูลผ่าน Dashboard
+> รองรับการดูข้อมูลเซ็นเซอร์แบบ **Real-time**, ระบบสั่งการปั๊มน้ำอัตโนมัติ และการจัดการข้อมูลผ่าน Dashboard
 
-🔗 **[ดูสไลด์นำเสนอโปรเจกต์ (Canva) คลิกที่นี่](https://canva.link/a4iad7hhi1i5vl6**
-Link FullVDO -->https://youtu.be/61h8lNIio6U
-Link ShortVDO -->https://vt.tiktok.com/ZS9et9dQV/
-
+🔗 **[ดูสไลด์นำเสนอโปรเจกต์ (Canva) คลิกที่นี่](https://canva.link/a4iad7hhi1i5vl6)**
+🎥 **[รับชมวิดีโอตัวเต็ม (Full VDO)](https://youtu.be/61h8lNIio6U)**
+📱 **[รับชมวิดีโอสั้น (Short VDO)](https://vt.tiktok.com/ZS9et9dQV/)**
 
 ---
 
@@ -28,7 +27,7 @@ Link ShortVDO -->https://vt.tiktok.com/ZS9et9dQV/
 ### ✅ สิ่งที่ต้องมีก่อน
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) (สำหรับรันเซิร์ฟเวอร์จำลอง)
-- Git สำหรับดึงโค้ด
+- [Git](https://git-scm.com/) สำหรับดึงโค้ด
 
 ---
 
@@ -38,7 +37,7 @@ Link ShortVDO -->https://vt.tiktok.com/ZS9et9dQV/
 git clone [https://github.com/your-username/ProjectSmartFram.git](https://github.com/your-username/ProjectSmartFram.git)
 cd ProjectSmartFram
 
-ขั้นตอนที่ 2 - ตั้งค่าไฟล์ .env
+### ขั้นตอนที่ 2 - ตั้งค่าไฟล์ .env
 สร้างไฟล์ .env ในโฟลเดอร์หลัก และกำหนดค่าพื้นฐานดังนี้:
 PORT=3000
 DB_HOST=mysql
@@ -48,15 +47,19 @@ DB_PASSWORD=greenspace_pass
 DB_NAME=greenspace_db
 JWT_SECRET=ใส่รหัสลับของคุณที่นี่
 
-ขั้นตอนที่ 3 - รันระบบ (Docker Compose)
+### ขั้นตอนที่ 3 - รันระบบ (Docker Compose)
 เปิด Terminal แล้วรันคำสั่งด้านล่างนี้ เพื่อสร้างและเปิดใช้งาน Backend และ Database ไปพร้อมๆ กัน:
 Bash
 docker compose up -d --build
 
-ขั้นตอนที่ 4 - การเข้าใช้งาน
+### ขั้นตอนที่ 4 - การเข้าใช้งาน
 เมื่อระบบทำงานสมบูรณ์แล้ว สามารถเข้าถึงบริการต่างๆ ได้ตามช่องทางนี้:
 Web Dashboard (หน้าเว็บหลัก): เปิดไฟล์ index.html หรือเข้าผ่าน http://localhost:3000
 ระบบจัดการฐานข้อมูล (phpMyAdmin): เข้าผ่าน http://localhost:8080
+Username | Password | Role | สิทธิ์การใช้งาน
+----- | ----- | ----- | ----- |
+admin | 1234 | OWNER | จัดการทุกส่วนในระบบ / จัดการสมาชิกฟาร์ม |
+gigi2 | 1234 | MEMBER | ดูข้อมูลแดชบอร์ด / สั่งรดน้ำด้วยมือ |
 
 ProjectSmartFram/
 ├── backend/              - โค้ดส่วนจัดการ API (Node.js) และเชื่อมต่อ Database
@@ -89,7 +92,7 @@ Features หลัก
 การจำลองข้อมูล: ในหน้า simulator.html ควรตั้งค่า API Endpoint ให้ตรงกับพอร์ตที่ Backend รันอยู่จริง (เช่น localhost:3000)
 
 ## 👨‍💻 ทีมพัฒนา (Development Team)
-โปรเจกต์นี้เป็นส่วนหนึ่งของวิชา ICT22467 - ระบบปฏิบัติการ (Operating System) * มหาวิทยาลัยศรีปทุม (Sripatum University)
+โปรเจกต์นี้เป็นส่วนหนึ่งของวิชา ICT22467: ระบบฐานข้อมูล  และ CPE23567: ระบบปฏิบัติการ (Operating System) * มหาวิทยาลัยศรีปทุม (Sripatum University)
 67157464 โกวิท คำชั่ง
 67176861 นราพรรณ รองราช
 67162014 อธิป ซิวเซ่ง
